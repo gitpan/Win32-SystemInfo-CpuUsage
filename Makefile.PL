@@ -2,6 +2,13 @@ use 5.008003;
 use ExtUtils::MakeMaker;
 # See lib/ExtUtils/MakeMaker.pm for details of how to influence
 # the contents of the Makefile that is written.
+
+if($^O !~ /MSWin32/ ){
+	print "OS unsupported\n";
+	print "No support for OS\n";
+	exit;
+}
+
 WriteMakefile(
     NAME              => 'Win32::SystemInfo::CpuUsage',
     VERSION_FROM      => 'lib/Win32/SystemInfo/CpuUsage.pm', # finds $VERSION

@@ -18,6 +18,10 @@ DEPENDENCIES
 This module requires these other modules and libraries:
 - A C compiler. This module is verified in VC++ 6.
 
+CHANGE LOGs
+- Add platform checking in Makefile.PL
+
+
 Copyleft (C) 2007 by Jing Kang (kxj@hotmail.com)
 
 This library is free software; you can redistribute it and/or modify
